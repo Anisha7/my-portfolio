@@ -19,7 +19,7 @@
     clear: both;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 700px) {
     .footer {
         width: calc(100% + 24px*2);
         /* overflow parent padding */
