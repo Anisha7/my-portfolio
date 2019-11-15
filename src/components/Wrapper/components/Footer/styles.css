@@ -1,6 +1,6 @@
 .footer {
     width: calc(100% + 96px*2);
-    height: 24px;
+    height: 48px;
     background: #212121;
     /* overflow parent padding */
     margin: 0 -96px;
@@ -10,11 +10,11 @@
     content: '';
     position: relative;
     left: calc(50% - 30px);
-    bottom: 30px;
+    bottom: 40px;
     width: 0;
     height: 0;
-    border-left: 40px solid transparent;
-    border-right: 40px solid transparent;
+    border-left: 48px solid transparent;
+    border-right: 48px solid transparent;
     border-bottom: 24px solid #212121;
     clear: both;
 }

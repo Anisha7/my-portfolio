@@ -2,8 +2,26 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.css';
 
+import * as smoothscroll from 'smoothscroll-polyfill';
+smoothscroll.polyfill();
+
 class Navbar extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            scrollToBottom: false,
+        }
+    }
+
     render() {
+        if ( this.state.scrollToBottom ) {
+            window.scrollTo({
+                top: document.body.scrollHeight,
+                left: 0,
+                behavior: 'smooth'
+              })
+        }
+
         return (
         <div className="navbar">
             <ul className="main-logo" >
@@ -12,7 +30,7 @@ class Navbar extends Component {
             
             <ul className="options">
                 <li><Link to="/projects">PROJECTS</Link></li>
-                <li className="contact"><Link to="/">CONTACT US</Link></li>
+                <li className="contact" ><a onClick={ () => this.setState( { scrollToBottom : true })}>CONTACT US</a></li>
             </ul>
         </div>)
     }

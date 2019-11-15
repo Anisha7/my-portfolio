@@ -24,14 +24,14 @@ class Contact extends Component {
                             onMouseOut={ () => this.setState({ showEmail: false }) }>
                             <p>{ emailText }</p>
                         </a>
-                        <div class="hidden-div">
-                            <div class="triangle"></div> 
+                        <div className="hidden-div">
+                            <div className="triangle"></div> 
                         </div>
                         <a href="https://www.linkedin.com/in/annysha/" className="col two" target="_blank">
                             <p>Linkedin connect.</p>
                         </a>
-                        <div class="hidden-div-two">
-                            <div class="triangle-two"></div> 
+                        <div className="hidden-div-two">
+                            <div className="triangle-two"></div> 
                         </div>
                     </div>
                 </div>
