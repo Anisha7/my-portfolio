@@ -1,0 +1,21 @@
+.footer {
+    width: calc(100% + 96px*2);
+    height: 48px;
+    background: #212121;
+    /* overflow parent padding */
+    margin: 0 -96px;
+}
+
+.footer::after {
+    content: '';
+    position: relative;
+    left: 50%;
+    right: 50%;
+    bottom: 60%;
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #212121;
+    clear: both;
+}

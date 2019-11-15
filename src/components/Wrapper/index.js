@@ -8,8 +8,7 @@ class Wrapper extends Component {
     render() {
         return (
             <div>
-                <Navbar /> 
-                boo
+                <Navbar />
                 { this.props.children }
                 <Footer /> 
             </div>
