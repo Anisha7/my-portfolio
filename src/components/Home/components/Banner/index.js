@@ -8,7 +8,7 @@ class Banner extends Component {
                 <div className="banner">
                     <div className="slogan">
                         <h1>I am a <span className="highlight">passionate</span></h1>
-                        <h1>frontend engineer</h1>
+                        <h1>frontend engineer.</h1>
                     </div>
                     <img src={ image } alt="Illustration of creative work space" />
                 </div>

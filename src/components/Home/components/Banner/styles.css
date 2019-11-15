@@ -12,6 +12,14 @@
    position: absolute;
 }
 
+.banner .highlight {
+    background: #244e62;
+    padding: 6px 12px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Montserrat-semibold';
+}
+
 @media (max-width: 1400px) {
     .banner h1 {
         font-size: 30px;

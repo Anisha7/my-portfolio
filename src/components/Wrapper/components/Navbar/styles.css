@@ -40,6 +40,7 @@
 .navbar .options .contact {
     background: #244e62;
     padding: 48px 24px 24px;
+    border-radius: 5px;
 }
 
 @media (max-width: 700px) {
