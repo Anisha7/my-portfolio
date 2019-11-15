@@ -1,5 +1,6 @@
 .banner {
-    margin: 72px;
+    margin-top: 72px;
+    margin-bottom: 72px;
 }
 
 .banner h1 {
@@ -28,14 +29,18 @@
     }
 }
 
-@media (max-width: 950px) {
+@media (max-width: 700px) {
     .banner {
-        margin: 24px 12px;
+        margin-top: 24px;
+        margin-bottom: 24px;
     }
 
     .banner h1 {
         font-size: 14px;
         margin-bottom: 6px;
-        /* text-align: center; */
+    }
+
+    .banner img {
+        padding-top: 10px;
     }
 }

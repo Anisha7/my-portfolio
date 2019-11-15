@@ -1,6 +1,6 @@
 .footer {
     width: calc(100% + 96px*2);
-    height: 48px;
+    height: 24px;
     background: #212121;
     /* overflow parent padding */
     margin: 0 -96px;
@@ -10,12 +10,12 @@
     content: '';
     position: relative;
     left: calc(50% - 30px);
-    bottom: 40px;
+    bottom: 30px;
     width: 0;
     height: 0;
-    border-left: 30px solid transparent;
-    border-right: 30px solid transparent;
-    border-bottom: 30px solid #212121;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-bottom: 24px solid #212121;
     clear: both;
 }
 
@@ -24,7 +24,7 @@
         width: calc(100% + 24px*2);
         /* overflow parent padding */
         margin: 0 -24px;
-        height: 24px;
+        height: 12px;
     }
 
     .footer::after {
@@ -34,6 +34,6 @@
         bottom: 24px;
         border-left: 24px solid transparent;
         border-right: 24px solid transparent;
-        border-bottom: 24px solid #212121;
+        border-bottom: 12px solid #212121;
     }
   }
