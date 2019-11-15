@@ -1,0 +1,33 @@
+.banner {
+    margin: 72px;
+}
+
+.banner h1 {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.slogan {
+   position: absolute;
+}
+
+@media (max-width: 1400px) {
+    .banner h1 {
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 14px;
+    }
+}
+
+@media (max-width: 950px) {
+    .banner {
+        margin: 24px 12px;
+    }
+
+    .banner h1 {
+        font-size: 14px;
+        margin-bottom: 6px;
+        /* text-align: center; */
+    }
+}
