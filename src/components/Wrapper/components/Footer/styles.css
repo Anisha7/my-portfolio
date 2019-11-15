@@ -4,6 +4,7 @@
     background: #212121;
     /* overflow parent padding */
     margin: 0 -96px;
+    cursor: pointer;
 }
 
 .footer::after {
