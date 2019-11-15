@@ -17,6 +17,9 @@ class Contact extends Component {
                         <div className="col two">
                             <p>Linkedin connect.</p>
                         </div>
+                        <div class="hidden-div-two">
+                            <div class="triangle-two"></div> 
+                        </div>
                     </div>
                 </div>
             )
