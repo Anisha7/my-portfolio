@@ -5,7 +5,7 @@ class Intro extends Component {
     render() {
         return (
                 <div className="intro content-margin">
-                    <h1>Beautify Anything</h1>
+                    <h1>Beautify Anything.</h1>
                     <p>Hello! I am Anisha. By now, you probably got a glimpse of what I do, 
                         but let me share a bit about myself. I am an hardworking gal with 
                         an innovative approach to engineering. I never restrict myself to 
