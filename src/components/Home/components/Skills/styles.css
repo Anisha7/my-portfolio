@@ -37,6 +37,7 @@
 @media (max-width: 1024px) {
     .skills {
         margin-bottom: 24px;
+        margin-top: 24px;
     }
 
     .skill img {
