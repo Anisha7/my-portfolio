@@ -11,6 +11,15 @@
   margin-right: 120px;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #CF7674 !important;
+}
+
 @media (max-width: 1024px) {
   .app {
     padding: 0 62px;
