@@ -1,0 +1,64 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: None;
+}
+
+.navbar ul, .navbar li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    padding: 48px 24px 24px 0;
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+.navbar .main-logo a {
+    color: #244e62;
+    font-family: 'Montserrat-medium';
+    font-size: 30px;
+}
+
+.navbar .options {
+    display: flex;
+}
+
+.navbar .options .contact a {
+    color: white;
+}
+
+.navbar .options .contact {
+    background: #244e62;
+    padding: 48px 24px 24px;
+}
+
+@media (max-width: 700px) {
+    .navbar ul li {
+        padding: 24px 12px 12px 0;
+    }
+
+    .navbar .options .contact {
+      padding: 24px 12px 12px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .navbar .main-logo a {
+        color: #244e62;
+        font-family: 'Montserrat-medium';
+        font-size: 16px;
+    }
+
+  }
