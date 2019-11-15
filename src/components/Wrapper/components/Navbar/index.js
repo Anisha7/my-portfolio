@@ -30,7 +30,7 @@ class Navbar extends Component {
             
             <ul className="options">
                 <li><Link to="/projects">PROJECTS</Link></li>
-                <li className="contact" ><a onClick={ () => this.setState( { scrollToBottom : true })}>CONTACT US</a></li>
+                <li className="contact" onClick={ () => this.setState( { scrollToBottom : true })}><a>CONTACT US</a></li>
             </ul>
         </div>)
     }
