@@ -35,10 +35,11 @@
     padding: 60px;
 }
 
-.projectLineItem span {
+.projectLineItem a {
     background-color: #244e62;
     color: white;
     padding: 2px 5px;
+    margin-left: 10px;
 }
 
 .projectLineItem > img {
