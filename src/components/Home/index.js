@@ -8,14 +8,24 @@ import Contact from './components/Contact';
 import Projects from './components/Projects';
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            scrollToProjects: false,
+            scrollToIntro: false,
+        }
+    }
 
     render() {
         return (
-                <Wrapper>
+                <Wrapper 
+                    scrollToProjects={ () => this.setState( { scrollToProjects: true } )}
+                    scrollToIntro={ () => this.setState( { scrollToIntro: true } )}
+                >
                     <Banner />
-                    <Intro />
+                    <Intro scroll={ this.state.scrollToIntro } />
                     <Skills />
-                    <Projects />
+                    <Projects scroll={ this.state.scrollToProjects } />
                     <Contact />
                 </Wrapper>
             )

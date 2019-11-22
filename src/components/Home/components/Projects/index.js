@@ -19,6 +19,12 @@ const ProjectLineItem = ({ title, description, image, url }) => {
 
 class Projects extends Component {
     render() {
+
+        if (this.props.scroll) {
+            this.refs.projects.scrollIntoView({ behavior: "smooth" });
+        }
+
+
         const projectObjects = [
             {
                 title: 'Calcumon',
@@ -40,7 +46,7 @@ class Projects extends Component {
             },
         ]
         return (
-            <div className="projects content-margin">
+            <div ref="projects" className="projects content-margin">
                 <h1>My work.</h1>
                 <p>Hi there! This site is one of my creative projects, 
                     where I designed the user interface along with the 
@@ -49,7 +55,7 @@ class Projects extends Component {
                 <div className="projectsList">
                     { projectObjects.map(({ title, description, image, url}) => {
                         return (
-                            <ProjectLineItem title={ title } description={ description } image={ image } url={ url } />
+                            <ProjectLineItem key={title} title={ title } description={ description } image={ image } url={ url } />
                         )
                     }) }
                 </div>

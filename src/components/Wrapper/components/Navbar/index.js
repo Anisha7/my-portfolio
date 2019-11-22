@@ -10,6 +10,7 @@ class Navbar extends Component {
         super(props)
         this.state = {
             scrollToBottom: false,
+            scrollToTop: false
         }
     }
 
@@ -22,16 +23,27 @@ class Navbar extends Component {
               })
         }
 
+        if ( this.state.scrollToTop ) {
+            console.log("HELLOOO")
+            window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+              })
+        }
+
+        const { scrollToProjects, scrollToIntro } = this.props
         return (
         <div className="navbar">
             <ul className="main-logo" >
-                <li><Link to="/">anisha</Link></li>  
+                <li onClick={ () => this.setState( { scrollToTop : true })}><a>anisha</a></li>  
             </ul>
             
             <ul className="options">
-                <li><Link to="/">ABOUT</Link></li>
-                <li><Link to="/">PROJECTS</Link></li>
+                <li><a onClick={() => scrollToIntro()}>ABOUT</a></li>
+                <li><a onClick={() => scrollToProjects()}>PROJECTS</a></li>
                 <li className="contact" onClick={ () => this.setState( { scrollToBottom : true })}><a>CONTACT</a></li>
+
             </ul>
         </div>)
     }

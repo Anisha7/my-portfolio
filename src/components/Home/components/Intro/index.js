@@ -2,9 +2,14 @@ import React, { Component } from 'react';
 import './styles.css';
 
 class Intro extends Component {
+    
     render() {
+        if (this.props.scroll) {
+            this.refs.intro.scrollIntoView({ behavior: "smooth" });
+        }
+
         return (
-                <div className="intro content-margin">
+                <div ref="intro" className="intro content-margin">
                     <h1>Beautify Anything.</h1>
                     <p>Hello! I am Anisha. By now, you probably got a glimpse of what I do, 
                         but let me share a bit about myself. I am an hardworking gal with 

@@ -4,11 +4,12 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 class Wrapper extends Component {
-
+    
     render() {
+        const { scrollToProjects, scrollToIntro } = this.props
         return (
             <div>
-                <Navbar />
+                <Navbar scrollToProjects={ scrollToProjects } scrollToIntro={ scrollToIntro } />
                 { this.props.children }
                 <Footer /> 
             </div>
