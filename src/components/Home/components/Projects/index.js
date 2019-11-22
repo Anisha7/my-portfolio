@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
 import './styles.css';
 
+import calcumon from '../../../../images/projects/calcumon.png';
+import creditswag from '../../../../images/projects/creditswag.png';
+import sadboykj from '../../../../images/projects/sadboykj.png';
+
 const ProjectLineItem = ({ title, description, image }) => {
     return (
-        <div>
-            <h2>{ title }</h2>
+        <div className="projectLineItem">
             <div>
-                <p>{ description }</p>
-                <img src={ image } alt="project asset" />
+                <h2>{ title }</h2>
+                <p>{ description }<br/><span>Try me.</span></p>
             </div>
-
+            <img src={ image } alt="project asset" />
         </div>
     )
 }
@@ -20,17 +23,17 @@ class Projects extends Component {
             {
                 title: 'Calcumon',
                 description: 'A subscription-based, multiplayer e-learning platform that incentivizes school-aged kids and teens to practice math through engaging challenges, material, and characters.',
-                image: '',
+                image: calcumon,
             },
             {
                 title: 'Credit Swag',
                 description: 'A mobile app that simplifies your financial life with progressive goal setting, data visualization, encouraging notifications, and an auto-categorized bill builder.',
-                image: '',
+                image: creditswag,
             },
             {
                 title: 'Sadboykj concert',
                 description: 'A responsive web app that enables event ticket sales in support of a  non-profit concert for local young artists, with customized links for each artist and their albums.',
-                image: '',
+                image: sadboykj,
             },
         ]
         return (
@@ -40,7 +43,7 @@ class Projects extends Component {
                     where I designed the user interface along with the 
                     assets, but there are more. Check out my passion 
                     projects below:</p>
-                <div className="projects-list">
+                <div className="projectsList">
                     { projectObjects.map(({ title, description, image}) => {
                         return (
                             <ProjectLineItem title={ title } description={ description } image={ image } />

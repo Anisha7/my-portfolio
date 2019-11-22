@@ -5,6 +5,7 @@ import Banner from './components/Banner';
 import Intro from './components/Intro';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import Projects from './components/Projects';
 
 class Home extends Component {
 
@@ -14,6 +15,7 @@ class Home extends Component {
                     <Banner />
                     <Intro />
                     <Skills />
+                    <Projects />
                     <Contact />
                 </Wrapper>
             )
