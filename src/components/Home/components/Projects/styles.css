@@ -35,29 +35,54 @@
     padding: 60px;
 }
 
-.projectLineItem a {
+.projectLineItem div p a {
     background-color: #244e62;
     color: white;
     padding: 2px 5px;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .projectLineItem > img {
     height: 100%;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
+    .projectsList {
+        margin: 40px 0;
+    }
+
+
+    .projectLineItem img {
+        height: 100px;
+    }
+
     .projects {
         margin-bottom: 48px;
         margin-top: 48px;
+    }
+
+    .projectLineItem > div {
+        padding: 30px 20px;
     }
 
     .projects h1 {
         font-size: 20px;
     }
 
+    .projects h2 {
+        font-size: 18px;
+    }
+
     .projects p {
         line-height: 16pt;
         font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .projectLineItem img {
+        display: none;
     }
 }

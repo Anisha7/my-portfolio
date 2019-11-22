@@ -9,10 +9,10 @@ const ProjectLineItem = ({ title, description, image, url }) => {
     return (
         <div className="projectLineItem">
             <div>
-                <h2>{ title }</h2>
+                <h2><a href={url} target="_blank">{ title }</a></h2>
                 <p>{ description }<a href={url} target="_blank">Try me.</a></p>
             </div>
-            <img src={ image } alt="project asset" />
+            <a href={url} target="_blank"><img src={ image } alt="project asset" /></a>
         </div>
     )
 }

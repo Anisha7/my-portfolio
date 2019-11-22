@@ -4,6 +4,11 @@
     justify-content: space-between;
     align-items: center;
     list-style-type: None;
+    /* scroll with page */
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 20;
 }
 
 .navbar ul, .navbar li {
