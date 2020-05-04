@@ -7,7 +7,8 @@
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "0.9.x",
-    "smoothscroll-polyfill": "^0.4.4"
+    "smoothscroll-polyfill": "^0.4.4",
+    "typed.js": "^2.0.11"
   },
   "devDependencies": {},
   "scripts": {

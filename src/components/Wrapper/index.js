@@ -9,7 +9,7 @@ class Wrapper extends Component {
         const { scrollToProjects, scrollToIntro } = this.props
         return (
             <div>
-                <Navbar scrollToProjects={ scrollToProjects } scrollToIntro={ scrollToIntro } />
+                <Navbar ref="navbar" scrollToProjects={ scrollToProjects } scrollToIntro={ scrollToIntro } />
                 { this.props.children }
                 <Footer /> 
             </div>
