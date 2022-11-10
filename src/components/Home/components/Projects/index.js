@@ -30,7 +30,7 @@ class Projects extends Component {
                 title: 'Calcumon',
                 description: 'A subscription-based, multiplayer e-learning platform that incentivizes school-aged kids and teens to practice math through engaging challenges, material, and characters.',
                 image: calcumon,
-                url: 'http://www.calcumon.com/',
+                url: 'https://calcumongame.herokuapp.com',
             },
             {
                 title: 'Credit Swag',
